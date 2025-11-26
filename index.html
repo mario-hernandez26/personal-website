@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Hernandez - Systems & Machine Learning Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Mario Hernandez</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Mario Hernandez</h1>
+                <h2 class="hero-subtitle">Systems & Machine Learning Engineer</h2>
+                <p class="hero-description">
+                    Technical Interests: ML Systems · Distributed Computing · Real-Time Market Infrastructure · 
+                    Signal Processing · Transformer Models · Blockchain & Cryptoeconomic Protocols
+                </p>
+                <div class="hero-links">
+                    <a href="mailto:mario.hernandez4@upr.edu" class="btn btn-primary">Get in Touch</a>
+                    <a href="#resume" class="btn btn-secondary">View Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p>
+                    I'm a Systems & Machine Learning Engineer with a passion for building scalable ML systems, 
+                    distributed computing infrastructure, and real-time market intelligence platforms. My work 
+                    spans from low-level signal processing and transformer architectures to high-level distributed 
+                    systems and blockchain protocols.
+                </p>
+                <p>
+                    Currently working on independent research in real-time market intelligence, building large-scale 
+                    systems for multi-exchange data ingestion and GPU-accelerated forecasting. I've also contributed 
+                    to research in 5G LDPC decoding, software-defined radio, computational biology, and bird-call 
+                    classification.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Research Engineer — Real-Time Market Intelligence</h3>
+                            <span class="timeline-company">Independent Research Project</span>
+                            <span class="timeline-date">Jan. 2024 - Present</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Built a 50k+ line system on AWS for multi-exchange data ingestion, asynchronous feed alignment, and GPU-accelerated short-horizon forecasting.</li>
+                            <li>Implemented S3-coordinated worker processes for shared state, modular pipelines for CEX/DEX execution venues, and on-chain execution via the dYdX protocol.</li>
+                            <li>Developed a deterministic replay engine enabling reproducible reconstruction of live trading trajectories for debugging, research, and microstructure analysis.</li>
+                            <li>Used the platform as a research testbed to study information latency, partial observability, and distributed coordination in real-world market environments.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Computational Biology ML Research Intern</h3>
+                            <span class="timeline-company">National Science Foundation</span>
+                            <span class="timeline-date">Sep. 2024 - Jan. 2025</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Developed ML systems for individual bee identification and OCR-based object recognition in ecological monitoring pipelines.</li>
+                            <li>Optimized YOLO-based detection models using TensorRT quantization and deployed distributed inference workloads on Google Cloud.</li>
+                            <li>Built a semi-automated, CVAT-integrated labeling pipeline combining pre-trained models with human-in-the-loop refinement.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software-Defined Radio Research Intern</h3>
+                            <span class="timeline-company">University of Nevada, Las Vegas</span>
+                            <span class="timeline-date">May 2024 - Aug. 2024</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Co-authored <em>A Software-Defined Radio Testbed for Distributed LiDAR Point Cloud Sharing</em>, implementing a V2V communication pipeline over IEEE 802.11p.</li>
+                            <li>Engineered PHY/MAC-layer components for multi-agent LiDAR sharing, including OFDM synchronization, packetization, and real-time point-cloud transmission.</li>
+                            <li>Integrated SDR transceivers with a ROS/Docker backend to enable cooperative perception across distributed vehicles.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>NSF Research Intern - Machine Learning & Signal Processing</h3>
+                            <span class="timeline-company">National Science Foundation</span>
+                            <span class="timeline-date">Jun. 2024 - Jul. 2024</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Extended prior LDPC decoding research by implementing deep-learning decoding prototypes for 5G channel models.</li>
+                            <li>Contributed to a HuggingFace transformer for bird-call classification achieving <strong>96% accuracy</strong> and <strong>93% precision</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>NASA Space Grant Research Fellow</h3>
+                            <span class="timeline-company">University of Puerto Rico</span>
+                            <span class="timeline-date">Nov. 2023 - May 2024</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Designed a low-complexity transformer decoder for LDPC and 5G NR LDPC codes using NVIDIA Sionna, benchmarking linear-time attention mechanisms against belief-propagation decoders.</li>
+                            <li>Implemented end-to-end training and evaluation pipelines, working directly with Tanner graphs, LLRs, and noisy-channel models.</li>
+                            <li>Published first-author paper <em>5G LDPC Linear Transformer for Channel Decoding</em>, produced under a NASA Space Grant award.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <h3>B.S. in Computer Science and Mathematics</h3>
+                    <p class="education-institution">University of Puerto Rico</p>
+                    <p class="education-details">GPA: 3.58 | 2022 - 2026</p>
+                </div>
+                <div class="education-item">
+                    <h3>Professional Development</h3>
+                    <ul class="education-courses">
+                        <li>Stanford University - CS231n: Convolutional Neural Networks for Visual Recognition</li>
+                        <li>MIT OpenCourseWare - Mathematics with Applications to Finance</li>
+                        <li>Harvard Extension School - CS50ai, CS50py, CS50web, and CS50</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">Solidity</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Sionna</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">LightGBM</span>
+                        <span class="skill-tag">TensorRT</span>
+                        <span class="skill-tag">PyTorch Geometric</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>ML Systems & Distributed Computing</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">CUDA</span>
+                        <span class="skill-tag">JAX</span>
+                        <span class="skill-tag">DeepSpeed</span>
+                        <span class="skill-tag">ONNX</span>
+                        <span class="skill-tag">MLflow</span>
+                        <span class="skill-tag">Apache Spark</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS (EC2/S3)</span>
+                        <span class="skill-tag">Google Cloud</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">NoSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Blockchain & Cryptography</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Smart contracts (Solidity)</span>
+                        <span class="skill-tag">Web3.py/Ethers.js</span>
+                        <span class="skill-tag">DeFi protocol integration</span>
+                        <span class="skill-tag">On-chain analytics</span>
+                        <span class="skill-tag">Tokenomics design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Systems & API Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">REST/JSON API design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <h3>5G LDPC Linear Transformer for Channel Decoding</h3>
+                    <p class="publication-authors">Hernandez, M., Stubberud, A., Saberinia, E., Morris, B.</p>
+                    <p class="publication-date">Jan. 2025</p>
+                </div>
+                <div class="publication-item">
+                    <h3>A Software-Defined Radio Testbed for Distributed LiDAR Point Cloud in V2V Networks</h3>
+                    <p class="publication-authors">Hernandez, M., Pinero, F.</p>
+                    <p class="publication-date">Aug. 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>LIFT Token - ERC-20 Smart Contract</h3>
+                    <p class="project-tech">Solidity, Web3, Ethereum</p>
+                    <p>Designed, deployed, and verified the ERC-20 token LIFT on Ethereum (with Uniswap-enabled liquidity) to study smart-contract security, tokenomics, and decentralized market mechanics (Etherscan).</p>
+                </div>
+                <div class="project-card">
+                    <h3>Local GPU Server Build</h3>
+                    <p class="project-tech">Unix, CUDA, CuDNN, Nvidia GPU</p>
+                    <p>High performance compute cluster build for training NNs with local RTX 4070 GPUs.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Auto Image Labeler</h3>
+                    <p class="project-tech">Python, CVAT</p>
+                    <p>Open-source image labeling pipeline using pre-trained model to generate labels to edit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-container">
+                <p class="resume-note">Download or view the full resume PDF below.</p>
+                <div class="resume-actions">
+                    <a href="resume.pdf" class="btn btn-primary" download>Download Resume PDF</a>
+                    <button class="btn btn-secondary" onclick="window.print()">Print Resume</button>
+                </div>
+                <div class="resume-preview">
+                    <div class="resume-content">
+                        <div class="resume-header">
+                            <h1>Mario Hernandez</h1>
+                            <div class="resume-contact">
+                                <span>787-519-1049</span> | 
+                                <a href="mailto:mario.hernandez4@upr.edu">mario.hernandez4@upr.edu</a> | 
+                                <a href="https://linkedin.com/in/mario-hernandez-b0296b250/" target="_blank">LinkedIn</a> | 
+                                <a href="https://github.com/mario-hernandez26" target="_blank">GitHub</a>
+                            </div>
+                            <h2>Systems & Machine Learning Engineer</h2>
+                            <p class="resume-interests">
+                                Technical Interests: ML Systems · Distributed Computing · Real-Time Market Infrastructure · 
+                                Signal Processing · Transformer Models · Blockchain & Cryptoeconomic Protocols
+                            </p>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3>Experience</h3>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <strong>Research Engineer — Real-Time Market Intelligence</strong>
+                                    <span>Jan. 2024 - Present</span>
+                                </div>
+                                <div class="resume-item-company">Independent Research Project</div>
+                                <ul>
+                                    <li>Built a 50k+ line system on AWS for multi-exchange data ingestion, asynchronous feed alignment, and GPU-accelerated short-horizon forecasting.</li>
+                                    <li>Implemented S3-coordinated worker processes for shared state, modular pipelines for CEX/DEX execution venues, and on-chain execution via the dYdX protocol.</li>
+                                    <li>Developed a deterministic replay engine enabling reproducible reconstruction of live trading trajectories for debugging, research, and microstructure analysis.</li>
+                                    <li>Used the platform as a research testbed to study information latency, partial observability, and distributed coordination in real-world market environments.</li>
+                                </ul>
+                            </div>
+
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <strong>Computational Biology ML Research Intern</strong>
+                                    <span>Sep. 2024 - Jan. 2025</span>
+                                </div>
+                                <div class="resume-item-company">National Science Foundation</div>
+                                <ul>
+                                    <li>Developed ML systems for individual bee identification and OCR-based object recognition in ecological monitoring pipelines.</li>
+                                    <li>Optimized YOLO-based detection models using TensorRT quantization and deployed distributed inference workloads on Google Cloud.</li>
+                                    <li>Built a semi-automated, CVAT-integrated labeling pipeline combining pre-trained models with human-in-the-loop refinement.</li>
+                                </ul>
+                            </div>
+
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <strong>Software-Defined Radio Research Intern</strong>
+                                    <span>May 2024 - Aug. 2024</span>
+                                </div>
+                                <div class="resume-item-company">University of Nevada, Las Vegas</div>
+                                <ul>
+                                    <li>Co-authored <em>A Software-Defined Radio Testbed for Distributed LiDAR Point Cloud Sharing</em>, implementing a V2V communication pipeline over IEEE 802.11p.</li>
+                                    <li>Engineered PHY/MAC-layer components for multi-agent LiDAR sharing, including OFDM synchronization, packetization, and real-time point-cloud transmission.</li>
+                                    <li>Integrated SDR transceivers with a ROS/Docker backend to enable cooperative perception across distributed vehicles.</li>
+                                </ul>
+                            </div>
+
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <strong>NSF Research Intern - Machine Learning & Signal Processing</strong>
+                                    <span>Jun. 2024 - Jul. 2024</span>
+                                </div>
+                                <div class="resume-item-company">National Science Foundation</div>
+                                <ul>
+                                    <li>Extended prior LDPC decoding research by implementing deep-learning decoding prototypes for 5G channel models.</li>
+                                    <li>Contributed to a HuggingFace transformer for bird-call classification achieving <strong>96% accuracy</strong> and <strong>93% precision</strong>.</li>
+                                </ul>
+                            </div>
+
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <strong>NASA Space Grant Research Fellow</strong>
+                                    <span>Nov. 2023 - May 2024</span>
+                                </div>
+                                <div class="resume-item-company">University of Puerto Rico</div>
+                                <ul>
+                                    <li>Designed a low-complexity transformer decoder for LDPC and 5G NR LDPC codes using NVIDIA Sionna, benchmarking linear-time attention mechanisms against belief-propagation decoders.</li>
+                                    <li>Implemented end-to-end training and evaluation pipelines, working directly with Tanner graphs, LLRs, and noisy-channel models.</li>
+                                    <li>Published first-author paper <em>5G LDPC Linear Transformer for Channel Decoding</em>, produced under a NASA Space Grant award.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3>Education</h3>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <strong>B.S. in Computer Science and Mathematics</strong>
+                                    <span>2022 - 2026</span>
+                                </div>
+                                <div class="resume-item-company">University of Puerto Rico | GPA: 3.58</div>
+                            </div>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <strong>Professional Development</strong>
+                                </div>
+                                <ul>
+                                    <li>Stanford University Department of Computer Science CS231n Convolutional Neural Networks for Visual Recognition</li>
+                                    <li>MIT OpenCourseWare - Mathematics with Applications to Finance</li>
+                                    <li>Harvard Extension School - CS50ai, CS50py, CS50web, and CS50</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3>Technical Skills</h3>
+                            <p><strong>Programming:</strong> Python, C/C++, Rust, Go, Solidity, SQL</p>
+                            <p><strong>Machine Learning:</strong> PyTorch, TensorFlow, Sionna, Scikit-learn, XGBoost, LightGBM, TensorRT, PyTorch Geometric</p>
+                            <p><strong>ML Systems & Distributed Computing:</strong> Docker, Kubernetes, CUDA, JAX, DeepSpeed, ONNX, MLflow, Apache Spark</p>
+                            <p><strong>Cloud & Databases:</strong> AWS (EC2/S3), Google Cloud, PostgreSQL, SQLite, NoSQL</p>
+                            <p><strong>Blockchain & Cryptography:</strong> Smart contracts (Solidity), Web3.py/Ethers.js, DeFi protocol integration, on-chain analytics, tokenomics design</p>
+                            <p><strong>Systems & API Development:</strong> Linux, Bash, Flask, Django, REST/JSON API design</p>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3>Publications</h3>
+                            <p>Hernandez, M., Stubberud, A., Saberinia, E., Morris, B. "5G LDPC Linear Transformer for Channel Decoding" Jan. 2025</p>
+                            <p>Hernandez, M., Pinero, F. "A Software-Defined Radio Testbed for Distributed LiDAR Point Cloud in V2V Networks" Aug. 2024</p>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3>Projects</h3>
+                            <p><strong>LIFT Token - ERC-20 Smart Contract</strong> | Solidity, Web3, Ethereum</p>
+                            <p>Designed, deployed, and verified the ERC-20 token LIFT on Ethereum (with Uniswap-enabled liquidity) to study smart-contract security, tokenomics, and decentralized market mechanics (Etherscan).</p>
+                            
+                            <p><strong>Local GPU server build</strong> | Unix, CUDA, CuDNN, Nvidia GPU</p>
+                            <p>High performance compute cluster build for training NNs with local RTX 4070 GPUs.</p>
+                            
+                            <p><strong>Auto Image Labeler</strong> | Python, CVAT</p>
+                            <p>Open-source image labeling pipeline using pre-trained model to generate labels to edit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <p>Feel free to reach out for opportunities, collaborations, or just to connect!</p>
+                <div class="contact-links">
+                    <a href="mailto:mario.hernandez4@upr.edu" class="contact-link">
+                        <span class="contact-icon">✉</span>
+                        mario.hernandez4@upr.edu
+                    </a>
+                    <a href="tel:787-519-1049" class="contact-link">
+                        <span class="contact-icon">📞</span>
+                        787-519-1049
+                    </a>
+                    <a href="https://linkedin.com/in/mario-hernandez-b0296b250/" target="_blank" class="contact-link">
+                        <span class="contact-icon">💼</span>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/pollyjuice74" target="_blank" class="contact-link">
+                        <span class="contact-icon">🔗</span>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mario Hernandez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
