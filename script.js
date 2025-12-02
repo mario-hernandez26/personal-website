@@ -1,3 +1,8 @@
+// Redirect root GitHub Pages URL to project subpath
+if (window.location.hostname === 'mario-hernandez26.github.io' && window.location.pathname === '/') {
+    window.location.replace('/personal-website/');
+}
+
 // Mobile Navigation Toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
