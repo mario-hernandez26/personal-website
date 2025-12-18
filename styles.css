@@ -519,10 +519,12 @@ body {
 
 .resume-embed {
     width: 100%;
-    min-height: 900px;
-    border: none;
-    border-radius: 12px;
+    height: min(1100px, 80vh);
+    min-height: 700px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
     box-shadow: var(--shadow-lg);
+    background: #ffffff;
 }
 
 .resume-fallback {
