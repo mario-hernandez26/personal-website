@@ -16,12 +16,12 @@
             <div class="nav-brand">Mario Hernandez</div>
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#publications">Publications</a></li>
                 <li><a href="#resume">Resume</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="nav-toggle" aria-label="Toggle navigation">
@@ -74,6 +74,45 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3><a href="https://birdeye.so/base/token/0xD4b28eF52b8F7b516C1BeC616ce3008807bD86D4" target="_blank">LIFT Token - ERC-20 Smart Contract</a></h3>
+                    <p class="project-tech">Solidity, Web3, Ethereum</p>
+                    <p>Designed, deployed, and verified the ERC-20 token LIFT on Base (with Uniswap-enabled liquidity) to study smart-contract security, tokenomics, and decentralized market mechanics (<a href="https://birdeye.so/base/token/0xD4b28eF52b8F7b516C1BeC616ce3008807bD86D4" target="_blank">Birdeye</a>).</p>
+                </div>
+                <div class="project-card">
+                    <h3>Local GPU Server Build</h3>
+                    <p class="project-tech">Unix, CUDA, CuDNN, Nvidia GPU</p>
+                    <p>High performance compute cluster build for training NNs with local RTX 4070 GPUs.</p>
+                </div>
+                <div class="project-card">
+                    <h3><a href="https://github.com/pollyjuice74/Search-Engine" target="_blank">Wikipedia Search Engine</a></h3>
+                    <p class="project-tech">Python, Scrapy, Django, NoSQL</p>
+                    <p>Recursive web crawler and indexing system for Wikipedia pages using TF-IDF and PageRank-style scoring over a NoSQL backend, with search, ranking, and structured data retrieval.</p>
+                </div>
+                <div class="project-card">
+                    <h3><a href="https://github.com/pollyjuice74/CVAT-Auto-Labeler" target="_blank">Auto Image Labeler</a></h3>
+                    <p class="project-tech">Python, CVAT</p>
+                    <p>Utility functions for automating CVAT labeling workflows by applying pre-trained models to auto-generate annotations for human refinement.</p>
+                </div>
+                <div class="project-card">
+                    <h3><a href="https://github.com/pollyjuice74/SVD-PCA-Study-on-Financial-Markets-Data" target="_blank">SVD/PCA Study on Financial Markets Data</a></h3>
+                    <p class="project-tech">Python, NumPy</p>
+                    <p>Linear algebra study applying singular value decomposition and principal component analysis to explore structure in financial time series.</p>
+                </div>
+                <div class="project-card">
+                    <h3><a href="https://github.com/pollyjuice74/network" target="_blank">Twitter-like Network App</a></h3>
+                    <p class="project-tech">Python, Django, NoSQL</p>
+                    <p>Social network with follows, likes, and timelines backed by a NoSQL store and JSON-based data schemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience" class="section section-alt">
         <div class="container">
@@ -100,14 +139,14 @@
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Computational Biology ML Research Intern</h3>
-                            <span class="timeline-company">National Science Foundation</span>
-                            <span class="timeline-date">Sep. 2024 - Jan. 2025</span>
+                            <h3>Software-Defined Radio Research Intern</h3>
+                            <span class="timeline-company">University of Nevada, Las Vegas</span>
+                            <span class="timeline-date">May 2025 - Aug. 2025</span>
                         </div>
                         <ul class="timeline-description">
-                            <li>Developed ML systems for individual bee identification and OCR-based object recognition in ecological monitoring pipelines.</li>
-                            <li>Optimized YOLO-based detection models using TensorRT quantization and deployed distributed inference workloads on Google Cloud.</li>
-                            <li>Built a semi-automated, CVAT-integrated labeling pipeline combining pre-trained models with human-in-the-loop refinement.</li>
+                            <li>Co-authored <em>A Software-Defined Radio Testbed for Distributed LiDAR Point Cloud Sharing</em>, implementing a V2V communication pipeline over IEEE 802.11p.</li>
+                            <li>Engineered PHY/MAC-layer components for multi-agent LiDAR sharing, including OFDM synchronization, packetization, and real-time point-cloud transmission.</li>
+                            <li>Integrated SDR transceivers with a ROS/Docker backend to enable cooperative perception across distributed vehicles.</li>
                         </ul>
                     </div>
                 </div>
@@ -116,14 +155,14 @@
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Software-Defined Radio Research Intern</h3>
-                            <span class="timeline-company">University of Nevada, Las Vegas</span>
-                            <span class="timeline-date">May 2024 - Aug. 2024</span>
+                            <h3>Computational Biology ML Research Intern</h3>
+                            <span class="timeline-company">National Science Foundation</span>
+                            <span class="timeline-date">Sep. 2024 - Jan. 2025</span>
                         </div>
                         <ul class="timeline-description">
-                            <li>Co-authored <em>A Software-Defined Radio Testbed for Distributed LiDAR Point Cloud Sharing</em>, implementing a V2V communication pipeline over IEEE 802.11p.</li>
-                            <li>Engineered PHY/MAC-layer components for multi-agent LiDAR sharing, including OFDM synchronization, packetization, and real-time point-cloud transmission.</li>
-                            <li>Integrated SDR transceivers with a ROS/Docker backend to enable cooperative perception across distributed vehicles.</li>
+                            <li>Developed ML systems for individual bee identification and OCR-based object recognition in ecological monitoring pipelines.</li>
+                            <li>Optimized YOLO-based detection models using TensorRT quantization and deployed distributed inference workloads on Google Cloud.</li>
+                            <li>Built a semi-automated, CVAT-integrated labeling pipeline combining pre-trained models with human-in-the-loop refinement.</li>
                         </ul>
                     </div>
                 </div>
@@ -160,25 +199,48 @@
                 </div>
             </div>
         </div>
+    </section> 
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <h3><a href="https://arxiv.org/abs/2501.14102" target="_blank">5G LDPC Linear Transformer for Channel Decoding</a></h3>
+                    <p class="publication-authors">Hernandez, M., Piñero, F.</p>
+                    <p class="publication-date">Jan. 2025</p>
+                </div>
+                <div class="publication-item">
+                    <h3><a href="https://arxiv.org/abs/2509.14523" target="_blank">A Software-Defined Radio Testbed for Distributed LiDAR Point Cloud in V2V Networks</a></h3>
+                    <p class="publication-authors">Hernandez, M., Bryce, E., Stubberud, P., Saberinia, E., Morris, B.</p>
+                    <p class="publication-date">Sep. 2025</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
+    <!-- Resume Section -->
+    <section id="resume" class="section">
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-content">
-                <div class="education-item">
-                    <h3>B.S. in Computer Science and Mathematics</h3>
-                    <p class="education-institution">University of Puerto Rico</p>
-                    <p class="education-details">GPA: 3.58 | 2022 - 2026</p>
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-container">
+                <p class="resume-note">View or download the full resume PDF directly.</p>
+                <div class="resume-actions">
+                    <a href="Resume_.pdf" class="btn btn-primary" download>Download Resume PDF</a>
+                    <a href="Resume_.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Open in New Tab</a>
                 </div>
-                <div class="education-item">
-                    <h3>Professional Development</h3>
-                    <ul class="education-courses">
-                        <li>Stanford University - CS231n: Convolutional Neural Networks for Visual Recognition</li>
-                        <li>MIT OpenCourseWare - Mathematics with Applications to Finance</li>
-                        <li>Harvard Extension School - CS50ai, CS50py, CS50web, and CS50</li>
-                    </ul>
+                <div class="resume-embed-wrapper">
+                    <iframe 
+                        class="resume-embed" 
+                        src="Resume_.pdf" 
+                        title="Mario Hernandez Resume" 
+                        aria-label="Embedded resume PDF">
+                    </iframe>
+                    <p class="resume-fallback">
+                        
+                        <a href="Resume_.pdf" target="_blank" rel="noopener">Or open it in a new tab</a>.
+                    </p>
                 </div>
             </div>
         </div>
@@ -260,225 +322,23 @@
         </div>
     </section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="section">
+    <!-- Education Section -->
+    <section id="education" class="section">
         <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <h3><a href="https://arxiv.org/abs/2501.14102" target="_blank">5G LDPC Linear Transformer for Channel Decoding</a></h3>
-                    <p class="publication-authors">Hernandez, M., Piñero, F.</p>
-                    <p class="publication-date">Jan. 2025</p>
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <h3>B.S. in Computer Science and Mathematics</h3>
+                    <p class="education-institution">University of Puerto Rico</p>
+                    <p class="education-details">GPA: 3.58 | 2022 - 2026</p>
                 </div>
-                <div class="publication-item">
-                    <h3><a href="https://arxiv.org/abs/2509.14523" target="_blank">A Software-Defined Radio Testbed for Distributed LiDAR Point Cloud in V2V Networks</a></h3>
-                    <p class="publication-authors">Hernandez, M., Bryce, E., Stubberud, P., Saberinia, E., Morris, B.</p>
-                    <p class="publication-date">Sep. 2025</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3><a href="https://birdeye.so/base/token/0xD4b28eF52b8F7b516C1BeC616ce3008807bD86D4" target="_blank">LIFT Token - ERC-20 Smart Contract</a></h3>
-                    <p class="project-tech">Solidity, Web3, Ethereum</p>
-                    <p>Designed, deployed, and verified the ERC-20 token LIFT on Base (with Uniswap-enabled liquidity) to study smart-contract security, tokenomics, and decentralized market mechanics (<a href="https://birdeye.so/base/token/0xD4b28eF52b8F7b516C1BeC616ce3008807bD86D4" target="_blank">Birdeye</a>).</p>
-                </div>
-                <div class="project-card">
-                    <h3>Local GPU Server Build</h3>
-                    <p class="project-tech">Unix, CUDA, CuDNN, Nvidia GPU</p>
-                    <p>High performance compute cluster build for training NNs with local RTX 4070 GPUs.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Auto Image Labeler</h3>
-                    <p class="project-tech">Python, CVAT</p>
-                    <p>Open-source image labeling pipeline using pre-trained model to generate labels to edit.</p>
-                </div>
-                <div class="project-card">
-                    <h3><a href="https://github.com/pollyjuice74/Search-Engine" target="_blank">Wikipedia Search Engine</a></h3>
-                    <p class="project-tech">Python, Scrapy, Django, NoSQL</p>
-                    <p>Recursive web crawler and indexing system for Wikipedia pages using TF-IDF and PageRank-style scoring over a NoSQL backend, with search, ranking, and structured data retrieval.</p>
-                </div>
-                <div class="project-card">
-                    <h3><a href="https://github.com/pollyjuice74/CVAT-Auto-Labeler" target="_blank">CVAT Auto Labeler</a></h3>
-                    <p class="project-tech">Python, CVAT</p>
-                    <p>Utility functions for automating CVAT labeling workflows by applying pre-trained models to auto-generate annotations for human refinement.</p>
-                </div>
-                <div class="project-card">
-                    <h3><a href="https://github.com/pollyjuice74/SVD-PCA-Study-on-Financial-Markets-Data" target="_blank">SVD/PCA Study on Financial Markets Data</a></h3>
-                    <p class="project-tech">Python, NumPy</p>
-                    <p>Linear algebra study applying singular value decomposition and principal component analysis to explore structure in financial time series.</p>
-                </div>
-                <div class="project-card">
-                    <h3><a href="https://github.com/pollyjuice74/network" target="_blank">Twitter-like Network App</a></h3>
-                    <p class="project-tech">Python, Django, NoSQL</p>
-                    <p>Social network with follows, likes, and timelines backed by a NoSQL store and JSON-based data schemas.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="section">
-        <div class="container">
-            <h2 class="section-title">Resume</h2>
-            <div class="resume-container">
-                <p class="resume-note">Download or view the full resume PDF below.</p>
-                <div class="resume-actions">
-                    <a href="resume.pdf" class="btn btn-primary" download>Download Resume PDF</a>
-                    <button class="btn btn-secondary" onclick="window.print()">Print Resume</button>
-                </div>
-                <div class="resume-preview">
-                    <div class="resume-content">
-                        <div class="resume-header">
-                            <h1>Mario Hernandez</h1>
-                            <div class="resume-contact">
-                                <span>787-519-1049</span> | 
-                                <a href="mailto:mario.hernandez4@upr.edu">mario.hernandez4@upr.edu</a> | 
-                                <a href="https://linkedin.com/in/mario-hernandez-b0296b250/" target="_blank">LinkedIn</a> | 
-                                <a href="https://github.com/mario-hernandez26" target="_blank">GitHub</a>
-                            </div>
-                            <h2>Systems & Machine Learning Engineer</h2>
-                            <p class="resume-interests">
-                                Technical Interests: ML Systems · Distributed Computing · Real-Time Market Infrastructure · 
-                                Signal Processing · Transformer Models · Blockchain & Cryptoeconomic Protocols
-                            </p>
-                        </div>
-
-                        <div class="resume-section">
-                            <h3>Experience</h3>
-                            <div class="resume-item">
-                                <div class="resume-item-header">
-                                    <strong>Research Engineer — Real-Time Market Intelligence</strong>
-                                    <span>Jan. 2024 - Present</span>
-                                </div>
-                                <div class="resume-item-company">Independent Research Project</div>
-                                <ul>
-                                    <li>Built a 50k+ line system on AWS for multi-exchange data ingestion, asynchronous feed alignment, and GPU-accelerated short-horizon forecasting.</li>
-                                    <li>Implemented S3-coordinated worker processes for shared state, modular pipelines for CEX/DEX execution venues, and on-chain execution via the dYdX protocol.</li>
-                                    <li>Developed a deterministic replay engine enabling reproducible reconstruction of live trading trajectories for debugging, research, and microstructure analysis.</li>
-                                    <li>Used the platform as a research testbed to study information latency, partial observability, and distributed coordination in real-world market environments.</li>
-                                </ul>
-                            </div>
-
-                            <div class="resume-item">
-                                <div class="resume-item-header">
-                                    <strong>Computational Biology ML Research Intern</strong>
-                                    <span>Sep. 2024 - Jan. 2025</span>
-                                </div>
-                                <div class="resume-item-company">National Science Foundation</div>
-                                <ul>
-                                    <li>Developed ML systems for individual bee identification and OCR-based object recognition in ecological monitoring pipelines.</li>
-                                    <li>Optimized YOLO-based detection models using TensorRT quantization and deployed distributed inference workloads on Google Cloud.</li>
-                                    <li>Built a semi-automated, CVAT-integrated labeling pipeline combining pre-trained models with human-in-the-loop refinement.</li>
-                                </ul>
-                            </div>
-
-                            <div class="resume-item">
-                                <div class="resume-item-header">
-                                    <strong>Software-Defined Radio Research Intern</strong>
-                                    <span>May 2024 - Aug. 2024</span>
-                                </div>
-                                <div class="resume-item-company">University of Nevada, Las Vegas</div>
-                                <ul>
-                                    <li>Co-authored <em>A Software-Defined Radio Testbed for Distributed LiDAR Point Cloud Sharing</em>, implementing a V2V communication pipeline over IEEE 802.11p.</li>
-                                    <li>Engineered PHY/MAC-layer components for multi-agent LiDAR sharing, including OFDM synchronization, packetization, and real-time point-cloud transmission.</li>
-                                    <li>Integrated SDR transceivers with a ROS/Docker backend to enable cooperative perception across distributed vehicles.</li>
-                                </ul>
-                            </div>
-
-                            <div class="resume-item">
-                                <div class="resume-item-header">
-                                    <strong>NSF Research Intern - Machine Learning & Signal Processing</strong>
-                                    <span>Jun. 2024 - Jul. 2024</span>
-                                </div>
-                                <div class="resume-item-company">National Science Foundation</div>
-                                <ul>
-                                    <li>Extended prior LDPC decoding research by implementing deep-learning decoding prototypes for 5G channel models.</li>
-                                    <li>Contributed to a HuggingFace transformer for bird-call classification achieving <strong>96% accuracy</strong> and <strong>93% precision</strong>.</li>
-                                </ul>
-                            </div>
-
-                            <div class="resume-item">
-                                <div class="resume-item-header">
-                                    <strong>NASA Space Grant Research Fellow</strong>
-                                    <span>Nov. 2023 - May 2024</span>
-                                </div>
-                                <div class="resume-item-company">University of Puerto Rico</div>
-                                <ul>
-                                    <li>Designed a low-complexity transformer decoder for LDPC and 5G NR LDPC codes using NVIDIA Sionna, benchmarking linear-time attention mechanisms against belief-propagation decoders.</li>
-                                    <li>Implemented end-to-end training and evaluation pipelines, working directly with Tanner graphs, LLRs, and noisy-channel models.</li>
-                                    <li>Published first-author paper <em>5G LDPC Linear Transformer for Channel Decoding</em>, produced under a NASA Space Grant award.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="resume-section">
-                            <h3>Education</h3>
-                            <div class="resume-item">
-                                <div class="resume-item-header">
-                                    <strong>B.S. in Computer Science and Mathematics</strong>
-                                    <span>2022 - 2026</span>
-                                </div>
-                                <div class="resume-item-company">University of Puerto Rico | GPA: 3.58</div>
-                            </div>
-                            <div class="resume-item">
-                                <div class="resume-item-header">
-                                    <strong>Professional Development</strong>
-                                </div>
-                                <ul>
-                                    <li>Stanford University Department of Computer Science CS231n Convolutional Neural Networks for Visual Recognition</li>
-                                    <li>MIT OpenCourseWare - Mathematics with Applications to Finance</li>
-                                    <li>Harvard Extension School - CS50ai, CS50py, CS50web, and CS50</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="resume-section">
-                            <h3>Technical Skills</h3>
-                            <p><strong>Programming:</strong> Python, C/C++, Rust, Go, Solidity, SQL</p>
-                            <p><strong>Machine Learning:</strong> PyTorch, TensorFlow, Sionna, Scikit-learn, XGBoost, LightGBM, TensorRT, PyTorch Geometric</p>
-                            <p><strong>ML Systems & Distributed Computing:</strong> Docker, Kubernetes, CUDA, JAX, DeepSpeed, ONNX, MLflow, Apache Spark</p>
-                            <p><strong>Cloud & Databases:</strong> AWS (EC2/S3), Google Cloud, PostgreSQL, SQLite, NoSQL</p>
-                            <p><strong>Blockchain & Cryptography:</strong> Smart contracts (Solidity), Web3.py/Ethers.js, DeFi protocol integration, on-chain analytics, tokenomics design</p>
-                            <p><strong>Systems & API Development:</strong> Linux, Bash, Flask, Django, REST/JSON API design</p>
-                        </div>
-
-                        <div class="resume-section">
-                            <h3>Publications</h3>
-                            <p>Hernandez, M., Piñero, F. <a href="https://arxiv.org/abs/2501.14102" target="_blank">"5G LDPC Linear Transformer for Channel Decoding"</a>, Jan. 2025</p>
-                            <p>Hernandez, M., Bryce, E., Stubberud, P., Saberinia, E., Morris, B. <a href="https://arxiv.org/abs/2509.14523" target="_blank">"A Software-Defined Radio Testbed for Distributed LiDAR Point Cloud in V2V Networks"</a>, Sep. 2025</p>
-                        </div>
-
-                        <div class="resume-section">
-                            <h3>Projects</h3>
-                            <p><strong><a href="https://birdeye.so/base/token/0xD4b28eF52b8F7b516C1BeC616ce3008807bD86D4" target="_blank">LIFT Token - ERC-20 Smart Contract</a></strong> | Solidity, Web3, Ethereum</p>
-                            <p>Designed, deployed, and verified the ERC-20 token LIFT on Base (with Uniswap-enabled liquidity) to study smart-contract security, tokenomics, and decentralized market mechanics (<a href="https://birdeye.so/base/token/0xD4b28eF52b8F7b516C1BeC616ce3008807bD86D4" target="_blank">Birdeye</a>).</p>
-                            
-                            <p><strong>Local GPU server build</strong> | Unix, CUDA, CuDNN, Nvidia GPU</p>
-                            <p>High performance compute cluster build for training NNs with local RTX 4070 GPUs.</p>
-                            
-                            <p><strong>Auto Image Labeler</strong> | Python, CVAT</p>
-                            <p>Open-source image labeling pipeline using pre-trained model to generate labels to edit.</p>
-                            
-                            <p><strong><a href="https://github.com/pollyjuice74/Search-Engine" target="_blank">Wikipedia Search Engine</a></strong> | Python, Scrapy, Django, NoSQL</p>
-                            <p>Recursive web crawler and indexing system for Wikipedia pages using TF-IDF, PageRank-style scoring, and a NoSQL backend.</p>
-                            
-                            <p><strong><a href="https://github.com/pollyjuice74/CVAT-Auto-Labeler" target="_blank">CVAT Auto Labeler</a></strong> | Python, CVAT</p>
-                            <p>Automation tools for CVAT labeling workflows driven by pre-trained computer vision models.</p>
-                            
-                            <p><strong><a href="https://github.com/pollyjuice74/SVD-PCA-Study-on-Financial-Markets-Data" target="_blank">SVD/PCA Study on Financial Markets Data</a></strong> | Python, NumPy</p>
-                            <p>Applied SVD and principal component analysis to study the structure of financial markets data as part of a linear algebra project.</p>
-                            
-                            <p><strong><a href="https://github.com/pollyjuice74/network" target="_blank">Twitter-like Network App</a></strong> | Python, Django, NoSQL</p>
-                            <p>Implemented a social network with follower graphs, likes, and feeds backed by a NoSQL data store.</p>
-                        </div>
-                    </div>
+                <div class="education-item">
+                    <h3>Professional Development</h3>
+                    <ul class="education-courses">
+                        <li>Stanford University - CS231n: Convolutional Neural Networks for Visual Recognition</li>
+                        <li>MIT OpenCourseWare - Mathematics with Applications to Finance</li>
+                        <li>Harvard Extension School - CS50ai, CS50py, CS50web, and CS50</li>
+                    </ul>
                 </div>
             </div>
         </div>

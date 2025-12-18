@@ -513,6 +513,24 @@ body {
     line-height: 1.6;
 }
 
+.resume-embed-wrapper {
+    margin-top: 2rem;
+}
+
+.resume-embed {
+    width: 100%;
+    min-height: 900px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+}
+
+.resume-fallback {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--text-light);
+}
+
 .resume-header {
     text-align: center;
     margin-bottom: 2rem;
